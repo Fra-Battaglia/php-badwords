@@ -1,3 +1,8 @@
+<?php
+	$text = $_POST['text'];
+	$formatted_text = str_replace('Lorem', '***', $text);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,6 +12,14 @@
 		<title>PHP Badwords</title>
 	</head>
 	<body>
+		<div>
+			<h2><?php echo strlen($text) ?></h2>
+			<p><?php echo $text; ?></p>
+		</div>
 		
+		<div>
+			<h2><?php echo strlen($formatted_text) ?></h2>
+			<p><?php echo $formatted_text; ?></p>
+		</div>
 	</body>
 </html>
