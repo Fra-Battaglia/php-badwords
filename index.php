@@ -7,6 +7,9 @@
 		<title>PHP Badwords</title>
 	</head>
 	<body>
-		
+		<form action="./formattedtext.php" method="POST">
+			<textarea name="text" id="text" cols="30" rows="10" placeholder="inserisci testo"></textarea>
+			<button type="submit">Invia</button>
+		</form>
 	</body>
 </html>
