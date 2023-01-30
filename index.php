@@ -9,6 +9,7 @@
 	<body>
 		<form action="./formattedtext.php" method="POST">
 			<textarea name="text" id="text" cols="30" rows="10" placeholder="inserisci testo"></textarea>
+			<input type="text" name="hidden-text" placeholder="inserisci testo da nascondere">
 			<button type="submit">Invia</button>
 		</form>
 	</body>

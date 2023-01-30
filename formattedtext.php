@@ -1,6 +1,7 @@
 <?php
 	$text = $_POST['text'];
-	$formatted_text = str_replace('Lorem', '***', $text);
+	$hidden_text = $_POST['hidden-text'];
+	$formatted_text = str_replace($hidden_text, '***', $text);
 ?>
 
 <!DOCTYPE html>
